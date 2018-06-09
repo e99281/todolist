@@ -159,7 +159,7 @@ html, body, .wrap {
         margin-top: 25px;
     }
     input[type="checkbox"]:checked + label {
-        background-image: url('/images/checktask.png');
+        background-image: url('../images/checktask.png');
     }
 }
 .task-name {
@@ -187,13 +187,13 @@ html, body, .wrap {
     }
     
     .icon-delete {
-        background-image: url('/images/delete.png');
+        background-image: url('../images/delete.png');
     }
     .icon-level {
-        background-image: url('/images/level.png');
+        background-image: url('../images/level.png');
     }
     .icon-edit {
-        background-image: url('/images/edit.png');
+        background-image: url('../images/edit.png');
     }
     .add-level {
         background-position: 0px -64px; 

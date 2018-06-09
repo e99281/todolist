@@ -149,7 +149,7 @@ html, body, .wrap {
 }
 
 .check input[type="checkbox"]:checked + label {
-  background-image: url("/images/checktask.png");
+  background-image: url("../images/checktask.png");
 }
 
 .task-name {
@@ -181,15 +181,15 @@ html, body, .wrap {
 }
 
 .icons .icon-delete {
-  background-image: url("/images/delete.png");
+  background-image: url("../images/delete.png");
 }
 
 .icons .icon-level {
-  background-image: url("/images/level.png");
+  background-image: url("../images/level.png");
 }
 
 .icons .icon-edit {
-  background-image: url("/images/edit.png");
+  background-image: url("../images/edit.png");
 }
 
 .icons .add-level {

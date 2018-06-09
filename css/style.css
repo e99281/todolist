@@ -1,3 +1,7 @@
+.bg-color-yellow {
+  background-color: #FEFFE5 !important;
+}
+
 h1 {
   font-size: 24px;
   margin: 0;
@@ -37,10 +41,23 @@ html, body, .wrap {
   display: inline-block;
 }
 
-.nav-tab h1 {
+.nav-tab a {
+  text-decoration: none;
+}
+
+.nav-tab a h1 {
   color: #ffffff;
   opacity: .7;
   text-align: center;
+  transition: .3s;
+}
+
+.nav-tab a:hover h1 {
+  opacity: 1;
+}
+
+.nav-tab a:active h1 {
+  color: #1EBCAD;
 }
 
 .nav {
@@ -63,5 +80,119 @@ html, body, .wrap {
   border-right: 16px solid transparent;
   border-bottom: 15px solid #F4F4F4;
   border-left: 16px solid transparent;
+}
+
+.todolist-bg {
+  height: 640px;
+  background-color: #F4F4F4;
+  overflow: hidden;
+}
+
+.add {
+  margin: 24px auto;
+  width: 560px;
+  height: 60px;
+}
+
+.add input[type="text"] {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border-radius: 2px;
+  padding: 16px 24px;
+  color: #707070;
+  border: 2px solid transparent;
+  transition: .5s;
+}
+
+.add input[type="text"]:focus {
+  border: 2px solid #1EBCAD;
+}
+
+.add input[type="text"]::placeholder {
+  color: #BABABA;
+}
+
+.tasks {
+  margin: 0px auto;
+  width: 560px;
+  height: 100%;
+}
+
+.tasks ul {
+  height: 100%;
+  width: 100%;
+}
+
+.task {
+  background-color: #ffffff;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.check {
+  display: inline-block;
+}
+
+.check input[type="checkbox"] {
+  display: none;
+}
+
+.check input[type="checkbox"] + label {
+  background-color: #DCEFED;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 24px;
+  margin-top: 25px;
+}
+
+.check input[type="checkbox"]:checked + label {
+  background-image: url(/images/checktask.png);
+}
+
+.task-name {
+  margin-left: 24px;
+  display: inline-block;
+}
+
+.icons {
+  display: inline-block;
+  float: right;
+  margin-right: 24px;
+  margin-top: 17px;
+}
+
+.icons .icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.icons .icon:hover {
+  background-position: 0px -32px;
+}
+
+.icons .icon:active {
+  background-position: 0 -64px;
+}
+
+.icons .icon-delete {
+  background-image: url(/images/delete.png);
+}
+
+.icons .icon-level {
+  background-image: url(/images/level.png);
+}
+
+.icons .icon-edit {
+  background-image: url(/images/edit.png);
+}
+
+.icons .add-level {
+  background-position: 0px -64px;
 }
 /*# sourceMappingURL=style.css.map */

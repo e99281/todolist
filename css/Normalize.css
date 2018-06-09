@@ -390,3 +390,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* set */
+input {
+  border-style: none;
+
+}
+input:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-color: -webkit-focus-ring-color;
+  outline-style: auto;
+  outline-width: 0px;
+}

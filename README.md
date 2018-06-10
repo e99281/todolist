@@ -1,7 +1,7 @@
 # The F2E Design 01 Todolist
 
 ### 練習項目：UI、scss、layout
->第一次使用GitHub，並利用GitHub Pages上傳網頁 
+>第一次使用GitHub，並利用GitHub Pages發佈網頁 
 
 >這次練習很重要的地方是路徑位置，push的路徑跟css圖檔的路徑都發生錯誤過，下次練習會更注意
 

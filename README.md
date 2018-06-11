@@ -7,4 +7,5 @@
 
 我的UI設計稿：<https://e99281.github.io/todolist/todolist-mockup/>
 >希望UI設計能有更多想法，下次切版使用scss排版能更順暢
+
 我的學習紀錄文：<https://medium.com/@e99281/the-f2e-design-01-todolist-ef4f900f3c53>

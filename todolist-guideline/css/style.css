@@ -1,0 +1,450 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/* $color */
+.color-main {
+  color: #179387;
+}
+
+.color-main-light {
+  color: #1EBCAD;
+}
+
+.color-main-light {
+  color: #DCEFED;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-grey {
+  color: #979797;
+}
+
+.color-grey-main {
+  color: #707070;
+}
+
+.color-grey-light {
+  color: #BABABA;
+}
+
+.color-yellow {
+  color: #FFD42F;
+}
+
+.color-yellow {
+  color: #FEFFE5;
+}
+
+.color-red {
+  color: #B82929;
+}
+
+.bg-color-main {
+  background-color: #179387;
+}
+
+.bg-color-main-lighter {
+  background-color: #DCEFED;
+}
+
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-white-bg {
+  background-color: #F4F4F4;
+}
+
+.bg-color-yellow-light {
+  background-color: #FEFFE5;
+}
+
+.bg-color-black-bg {
+  background-color: #333333;
+}
+
+/* $font */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* 隱藏區塊 */
+.hide {
+  display: none !important;
+}
+
+/* 編輯時的整個區塊的陰影 */
+.edit-shadow {
+  box-shadow: 0 4 4 #333333 !important;
+  margin-bottom: 16px;
+}
+
+* {
+  font-family: 'Roboto', sans-serif !important;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+header, section {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+/* $header */
+.nav {
+  /* 選單在的位置樣式.nav-tab-now */
+}
+
+.nav .nav-tab {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.nav .nav-tab h1 {
+  opacity: .7;
+  transition: 0.5s;
+}
+
+.nav .nav-tab:hover h1 {
+  opacity: 1;
+}
+
+.nav .nav-tab:active h1 {
+  color: #1EBCAD;
+}
+
+.nav .nav-tab-now {
+  position: relative;
+}
+
+.nav .nav-tab-now h1 {
+  opacity: 1;
+}
+
+.nav .nav-tab-now:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 15px solid #F4F4F4;
+  border-left: 16px solid transparent;
+}
+
+/* $section */
+.max-height {
+  max-height: 640px;
+  overflow: auto;
+}
+
+/* scrollbar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 10px;
+  border-radius: 5px;
+  background: #BABABA;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #179387;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1EBCAD;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list .list-item {
+  width: 100%;
+  max-width: 560px;
+  border-bottom: 1px solid #BABABA;
+}
+
+.list .list-item:first-child {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.list .list-item:last-child {
+  border-bottom: none;
+  margin-bottom: 16px;
+}
+
+.list .list-item .panel-top {
+  border-bottom: 1px solid #BABABA;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.main input[type="checkbox"] {
+  display: none;
+}
+
+.main input[type="checkbox"] + label {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.main input[type="checkbox"]:checked + label {
+  background-image: url("../images/checktask.png");
+}
+
+.main input[type="text"] {
+  flex: 1;
+  margin-left: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 24px;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.main input[type="text"]:focus {
+  border: 2px solid #1EBCAD;
+}
+
+.main input[type="text"]::placeholder {
+  color: #BABABA;
+}
+
+.main .task-title {
+  flex: 1;
+  margin-left: 24px;
+}
+
+#edit-task-title::placeholder {
+  color: #707070;
+}
+
+.task-done {
+  color: #BABABA;
+  text-decoration: line-through;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.icons .icon {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.icons .icon:hover {
+  background-position: 0 -32px;
+}
+
+.icons .icon:active {
+  background-position: 0 -64px;
+}
+
+.icons .icon-delete {
+  background-image: url("../images/delete.png");
+}
+
+.icons .icon-level {
+  background-image: url("../images/level.png");
+}
+
+.icons .icon-edit {
+  background-image: url("../images/edit.png");
+}
+
+.icons .icon-edit-now, .icons .icon-level-up {
+  background-position: 0 -64px;
+}
+
+.icons .icon-edit-now:hover, .icons .icon-level-up:hover {
+  background-position: 0 -64px;
+}
+
+.icons .icon-edit-now:active, .icons .icon-level-up:active {
+  background-position: 0 -64px;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -8px;
+  padding-left: 60px;
+  padding-bottom: 8px;
+}
+
+.icon20 {
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.icon-calendar {
+  background-image: url("../images/calendar.png");
+}
+
+.icon-file {
+  background-image: url("../images/file.png");
+}
+
+.icon-comment {
+  background-image: url("../images/comment.png");
+}
+
+.icon-pos {
+  background-position: 0 -20px;
+}
+
+.controls {
+  padding: 16px 24px;
+}
+
+.control {
+  margin-bottom: 16px;
+}
+
+.control .control-title {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.control input[type="date"], .control input[type="time"] {
+  height: 36px;
+  border: 2px solid transparent;
+}
+
+.control input[type="date"]:active, .control input[type="time"]:active {
+  border: 2px solid #1EBCAD;
+}
+
+.control input[type="date"], .control input[type="file"], .control textarea {
+  margin-left: 40px;
+}
+
+.control input[type="file"] {
+  display: none;
+}
+
+.control input[type="file"] + label {
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.control input[type="file"] + label p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.control input[type="file"] + label:hover {
+  background-color: #179387;
+}
+
+.control input[type="file"] + label:hover p {
+  color: #ffffff;
+}
+
+.control textarea {
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.control textarea:focus {
+  border: 2px solid #1EBCAD;
+}
+
+.control textarea::placeholder {
+  color: #BABABA;
+}
+
+/* 確認新增&取消按鈕 */
+.btns {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+}
+
+.btns .btn {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  padding: 16px;
+  transition: 0.5s;
+}
+
+.btns .cancel:hover {
+  background-color: #B82929;
+  color: #ffffff;
+}
+
+.btns .cancel:active {
+  background-color: #E60D0D;
+}
+
+.btns .confirm:hover {
+  background-color: #1EBCAD;
+}
+/*# sourceMappingURL=style.css.map */

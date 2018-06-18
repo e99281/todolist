@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todolist Guideline</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-color-black-bg">
+    <div class="wrap">
+        <header class="bg-color-main">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="color-white">
+                        <li class="nav-tab nav-tab-now">
+                            <h1>All</h1>
+                        </li><li class="nav-tab">
+                            <h1>In Progress</h1>
+                        </li><li class="nav-tab">
+                            <h1>Completed</h1>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+        <section>
+            <div class="container bg-color-white-bg max-height">
+                <ul class="list">
+                    <!-- list-add-task -->
+                    <li class="list-item bg-color-white edit-shadow">
+                        <div class="panel-top">
+                            <div class="main">
+                                
+                                <input type="checkbox" id="check-task">
+                                <label class="bg-color-main-lighter hide" for="check-task"></label>
+                                <input class="color-grey-main" type="text" placeholder="+ Add Task">
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete hide"></div>
+                                    <div class="icon icon-level"></div>
+                                    <div class="icon icon-edit"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second hide">
+                                <div class="icon20 icon-calendar"></div>
+                                <p class="color-grey">06-20</p>
+                                <div class="icon20 icon-file"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                        <div class="panel-bottom bg-color-main-lighter">
+                            <div class="controls color-grey-main">
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-calendar "></div>
+                                        <h2>Deadline</h2>
+                                    </div>
+                                    <input class="color-grey-main" type="date" name="" id="">
+                                    <input class="color-grey-main" type="time" name="" id="">
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-file"></div>
+                                        <h2>File</h2>
+                                    </div>
+                                    <input type="file" name="" id="add-file">
+                                    <label class="bg-color-white color-grey-light" for="add-file"><p>+</p></label>
+                                    
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-comment"></div>
+                                        <h2>Comment</h2>
+                                    </div>
+                                    <textarea class="color-grey-main" name="" id="" cols="40" rows="5" placeholder="Type your memo here…"></textarea>
+                                </div>   
+                            </div>
+                            <div class="btns">
+                                <div class="btn cancel bg-color-white color-red">
+                                    <span>x Cancel</span>
+                                </div>
+                                <div class="btn confirm bg-color-main color-white">
+                                    <span>+ Add Task</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <!-- list-edit-task -->
+                    <li class="list-item bg-color-white edit-shadow">
+                        <div class="panel-top">
+                            <div class="main">
+                                
+                                <input type="checkbox" id="check-task1">
+                                <label class="bg-color-main-lighter" for="check-task1"></label>
+                                <input class="color-grey-main" id="edit-task-title" type="text" placeholder="Coding">
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level"></div>
+                                    <div class="icon icon-edit icon-edit-now"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second hide">
+                                <div class="icon20 icon-calendar"></div>
+                                <p class="color-grey">06-20</p>
+                                <div class="icon20 icon-file"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                        <div class="panel-bottom bg-color-main-lighter">
+                            <div class="controls color-grey-main">
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-calendar "></div>
+                                        <h2>Deadline</h2>
+                                    </div>
+                                    <input class="color-grey-main" type="date" name="" id="">
+                                    <input class="color-grey-main" type="time" name="" id="">
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-file"></div>
+                                        <h2>File</h2>
+                                    </div>
+                                    <input type="file" name="" id="add-file">
+                                    <label class="bg-color-white color-grey-light" for="add-file"><p>+</p></label>
+                                    
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-comment"></div>
+                                        <h2>Comment</h2>
+                                    </div>
+                                    <textarea class="color-grey-main" name="" id="" cols="40" rows="5" placeholder="Type your memo here…"></textarea>
+                                </div>   
+                            </div>
+                            <div class="btns">
+                                <div class="btn cancel bg-color-white color-red">
+                                    <span>x Cancel</span>
+                                </div>
+                                <div class="btn confirm bg-color-main color-white">
+                                    <span>+ Save</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <!-- list-edit-levelup -->
+                    <li class="list-item bg-color-white edit-shadow">
+                        <div class="panel-top">
+                            <div class="main bg-color-yellow-light">
+                                
+                                <input type="checkbox" id="check-task1">
+                                <label class="bg-color-main-lighter" for="check-task1"></label>
+                                <input class="color-grey-main" id="edit-task-title" type="text" placeholder="Coding Guideline">
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level icon-level-up"></div>
+                                    <div class="icon icon-edit icon-edit-now"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second hide">
+                                <div class="icon20 icon-calendar"></div>
+                                <p class="color-grey">06-20</p>
+                                <div class="icon20 icon-file"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                        <div class="panel-bottom bg-color-main-lighter">
+                            <div class="controls color-grey-main">
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-calendar "></div>
+                                        <h2>Deadline</h2>
+                                    </div>
+                                    <input class="color-grey-main" type="date" name="" id="">
+                                    <input class="color-grey-main" type="time" name="" id="">
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-file"></div>
+                                        <h2>File</h2>
+                                    </div>
+                                    <input type="file" name="" id="add-file">
+                                    <label class="bg-color-white color-grey-light" for="add-file"><p>+</p></label>
+                                    
+                                </div>
+                                <div class="control">
+                                    <div class="control-title">
+                                        <div class="icon20 icon-pos icon-comment"></div>
+                                        <h2>Comment</h2>
+                                    </div>
+                                    <textarea class="color-grey-main" name="" id="" cols="40" rows="5" placeholder="Type your memo here…"></textarea>
+                                </div>   
+                            </div>
+                            <div class="btns">
+                                <div class="btn cancel bg-color-white color-red">
+                                    <span>x Cancel</span>
+                                </div>
+                                <div class="btn confirm bg-color-main color-white">
+                                    <span>+ Save</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <!-- list-normal- -->
+                    <li class="list-item bg-color-white">
+                        <div>
+                            <div class="main">
+                                
+                                <input type="checkbox" id="check-task2">
+                                <label class="bg-color-main-lighter" for="check-task2"></label>
+                                <div class="task-title">
+                                    <h1 class="color-grey-main">Design</h1>
+                                </div>
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level"></div>
+                                    <div class="icon icon-edit"></div>
+                                </div>
+    
+                            </div>
+                            
+                        </div>
+                    </li> 
+                    <!-- list-date -->
+                    <li class="list-item bg-color-white">
+                        <div>
+                            <div class="main">
+                                
+                                <input type="checkbox" id="check-task3">
+                                <label class="bg-color-main-lighter" for="check-task3"></label>
+                                <div class="task-title">
+                                    <h1 class="color-grey-main">Design UI</h1>
+                                </div>
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level"></div>
+                                    <div class="icon icon-edit"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second">
+                                <div class="icon20 icon-calendar"></div>
+                                <p class="color-grey">06-20</p>
+                                <div class="icon20 icon-file"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                    </li> 
+                    <!-- list-levelup-date -->
+                    <li class="list-item bg-color-white">
+                        <div>
+                            <div class="main bg-color-yellow-light">
+                                
+                                <input type="checkbox" id="check-task3">
+                                <label class="bg-color-main-lighter" for="check-task3"></label>
+                                <div class="task-title">
+                                    <h1 class="color-grey-main">Logo+icon</h1>
+                                </div>
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level icon-level-up"></div>
+                                    <div class="icon icon-edit"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second bg-color-yellow-light">
+                                <div class="icon20 icon-calendar"></div>
+                                <p class="color-grey">08:20</p>
+                                <div class="icon20 icon-file hide"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                    </li> 
+                    <!-- list-done -->
+                    <li class="list-item bg-color-white">
+                        <div>
+                            <div class="main bg-color-yellow-light">
+                                
+                                <input type="checkbox" checked="checked" id="check-task3">
+                                <label class="bg-color-main-lighter" for="check-task3"></label>
+                                <div class="task-title">
+                                    <h1 class="task-done">Todolist Guideline</h1>
+                                </div>
+                            
+                                <div class="icons">
+                                    <div class="icon icon-delete"></div>
+                                    <div class="icon icon-level icon-level-up"></div>
+                                    <div class="icon icon-edit"></div>
+                                </div>
+    
+                            </div>
+                            <div class="second bg-color-yellow-light">
+                                <div class="icon20 icon-calendar hide"></div>
+                                <p class="color-grey hide">08:20</p>
+                                <div class="icon20 icon-file hide"></div>
+                                <div class="icon20 icon-comment"></div>
+                            </div>
+                        </div>
+                    </li>    
+                </ul>
+            </div> 
+        </section>
+    </div>   
+</body>
+</html>
